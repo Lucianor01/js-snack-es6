@@ -42,6 +42,9 @@ function numeroRandom(min, max) {
 squadraCalcio.forEach( squadra => {
     squadra.puntiFatti = numeroRandom(0, 100)
     squadra.falliSubiti = numeroRandom(0, 50)
-    console.log(squadra.puntiFatti);
-    console.log(squadra.falliSubiti);
+    // console.log(squadra.puntiFatti);
+    // console.log(squadra.falliSubiti);
 })
+
+const squadraNomeFalliSubiti = squadraCalcio.map(({nome, falliSubiti}) => ({nome, falliSubiti}))
+console.log(squadraNomeFalliSubiti);
