@@ -27,3 +27,22 @@ const bici = [
         peso: '23',
     }
 ]
+
+
+for (let i = 0; i < bici.length; i++) {
+    
+    if (bici[i].peso <= 10) {
+        
+        const {nome, peso} = bici[i]
+
+        document.querySelector('body').innerHTML +=`
+        <div>
+            <div>
+                <h1>La bici con il peso minore è : "${nome} ${peso}"</h1>
+            </div>
+        </div>
+        `
+        console.log(nome, peso);
+    }
+
+}
